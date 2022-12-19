@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+keystore.jks
+private_key.pepk
+*.aab
+*.apk
