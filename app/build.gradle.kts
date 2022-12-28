@@ -4,15 +4,16 @@ plugins {
 }
 
 android {
-    namespace = "cz.talich.daily"
-    compileSdk = 31
+    buildToolsVersion = AndroidSdk.buildToolsVersion
+    compileSdk = AndroidSdk.compileSdkVersion
+    namespace = Application.namespace
 
     defaultConfig {
-        applicationId = "cz.talich.daily"
-        minSdk = 30
-        targetSdk = 31
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Application.id
+        minSdk = AndroidSdk.minSdkVersion
+        targetSdk = AndroidSdk.targetSdkVersion
+        versionCode = Application.Version.code
+        versionName = Application.Version.name
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -34,13 +35,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.1.1"
+        kotlinCompilerExtensionVersion = AndroidSdk.composeCompiler
     }
     packagingOptions {
         resources {
@@ -50,25 +51,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
-    implementation("androidx.activity:activity-compose:1.3.1")
-    implementation("androidx.compose.ui:ui:1.1.1")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.1")
-    implementation("androidx.compose.material:material:1.1.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
-    implementation("com.google.android.material:material:1.3.0-alpha03")
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    add(Testing.dependencies)
+    add(AndroidX.dependencies)
+    add(MaterialDesign.dependencies)
 
-    testImplementation("junit:junit:4.13.2")
-    testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.4")
-    testImplementation("io.mockk:mockk:1.10.2")
-    testImplementation("app.cash.turbine:turbine:0.12.1")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.1")
-
-    debugImplementation("androidx.compose.ui:ui-tooling:1.1.1")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.1")
+    implementation(Accompanist.systemUiController)
 }

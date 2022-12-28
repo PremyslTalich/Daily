@@ -1,19 +1,28 @@
+# IntelliJ
 *.iml
+/.idea/
+
+# Gradle
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+build/
+
+# Local properties
+local.properties
+
+# MacOS
 .DS_Store
-/build
+
+# Android Studio generated files and folders
 /captures
 .externalNativeBuild
 .cxx
-local.properties
-keystore.jks
-private_key.pepk
+output.json
+
+# Google Play keystore
+*.jks
+*.pepk
+*.keystore
+
+# Android artifacts
 *.aab
 *.apk
