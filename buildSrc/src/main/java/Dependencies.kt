@@ -19,14 +19,14 @@ object Testing {
 }
 
 object AndroidX {
-    private const val core = "androidx.core:core-ktx:1.7.0"
-    private const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
-    private const val material = "androidx.compose.material:material:1.1.1"
-    private const val activityCompose = "androidx.activity:activity-compose:1.3.1"
-    private const val compose = "androidx.compose.ui:ui:1.1.1"
-    private const val composePreview = "androidx.compose.ui:ui-tooling-preview:1.1.1"
-    private const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
-    private const val composeUiTooling = "androidx.compose.ui:ui-tooling:1.1.1"
+    const val core = "androidx.core:core-ktx:1.7.0"
+    const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+    const val material = "androidx.compose.material:material:1.1.1"
+    const val activityCompose = "androidx.activity:activity-compose:1.3.1"
+    const val compose = "androidx.compose.ui:ui:1.1.1"
+    const val composePreview = "androidx.compose.ui:ui-tooling-preview:1.1.1"
+    const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+    const val composeUiTooling = "androidx.compose.ui:ui-tooling:1.1.1"
 
     val dependencies = listOf(
         Pair("implementation", core),
@@ -50,8 +50,4 @@ object MaterialDesign {
 
 object Accompanist {
     const val systemUiController = "com.google.accompanist:accompanist-systemuicontroller:0.23.1"
-}
-
-object Translations {
-    const val poeditor = "com.google.accompanist:accompanist-systemuicontroller:0.23.1"
 }

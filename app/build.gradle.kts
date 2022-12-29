@@ -51,6 +51,8 @@ android {
 }
 
 dependencies {
+    addModule(Feature.main)
+
     add(Testing.dependencies)
     add(AndroidX.dependencies)
     add(MaterialDesign.dependencies)

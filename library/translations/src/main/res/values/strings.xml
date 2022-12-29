@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_line_1">"Everything"</string>
+    <string name="message_line_2">"Will"</string>
+    <string name="message_line_3">"Be\nAlright"</string>
+</resources>

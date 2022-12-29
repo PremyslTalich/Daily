@@ -17,4 +17,6 @@ dependencyResolutionManagement {
 rootProject.name = "Daily"
 
 include(":app")
-include(":library:translation")
+include(":feature:main")
+include(":library:design")
+include(":library:translations")

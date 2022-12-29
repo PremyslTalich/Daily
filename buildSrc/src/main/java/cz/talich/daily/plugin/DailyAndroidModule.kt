@@ -57,8 +57,7 @@ private fun Project.configureAndroid() {
             kotlinOptions {
                 freeCompilerArgs = listOf(
                     "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
-                    "-Xuse-experimental=kotlinx.coroutines.InternalCoroutinesApi",
-                    "-Xallow-jvm-ir-dependencies"
+                    "-Xuse-experimental=kotlinx.coroutines.InternalCoroutinesApi"
                 )
             }
         }
