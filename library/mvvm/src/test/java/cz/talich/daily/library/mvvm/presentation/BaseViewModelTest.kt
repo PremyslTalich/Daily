@@ -1,4 +1,4 @@
-package cz.talich.daily.feature.main.presentation
+package cz.talich.daily.library.mvvm.presentation
 
 import app.cash.turbine.test
 import io.kotest.matchers.shouldBe

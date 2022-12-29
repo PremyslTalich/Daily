@@ -8,6 +8,7 @@ android {
 
 dependencies {
     addModule(Library.design)
+    addModule(Library.mvvm)
     addModule(Library.translations)
 
     add(Testing.dependencies)

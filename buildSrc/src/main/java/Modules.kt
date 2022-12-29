@@ -5,4 +5,5 @@ object Feature {
 object Library {
     const val design = ":library:design"
     const val translations = ":library:translations"
+    const val mvvm = ":library:mvvm"
 }

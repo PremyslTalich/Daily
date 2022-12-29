@@ -2,6 +2,7 @@ package cz.talich.daily.feature.main.presentation
 
 import androidx.lifecycle.viewModelScope
 import cz.talich.daily.feature.main.infrastructure.DelayService
+import cz.talich.daily.library.mvvm.presentation.BaseViewModel
 import kotlinx.coroutines.launch
 import kotlin.time.Duration.Companion.seconds
 
