@@ -16,7 +16,6 @@ private fun Project.configurePlugins() {
     plugins.apply("com.vanniktech.dependency.graph.generator")
 }
 
-
 private fun Project.configureTasks() {
     tasks.register("generateAndCopyDependencyGraphs", Copy::class) {
         group = "reporting"
