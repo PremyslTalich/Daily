@@ -11,6 +11,7 @@ repositories {
 dependencies {
     implementation("com.android.tools.build:gradle:7.3.1")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+    implementation("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.21.0")
 }
 
 gradlePlugin {
@@ -18,6 +19,10 @@ gradlePlugin {
         register("daily-android-module") {
             id = "daily-android-module"
             implementationClass = "cz.talich.daily.plugin.DailyAndroidModule"
+        }
+        register("daily-android-detekt-plugin") {
+            id = "daily-android-detekt-plugin"
+            implementationClass = "cz.talich.daily.plugin.DailyAndroidDetektPlugin"
         }
     }
 }
