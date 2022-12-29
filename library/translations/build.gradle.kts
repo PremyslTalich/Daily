@@ -6,10 +6,10 @@ plugins {
 android {
     namespace = moduleNamespace
 
-    poEditor {
-        with (localProperties) {
-            setApiToken(getProperty("poEditorApiToken"))
-            setProjectId(getProperty("poEditorProjectId").toInt())
+    localProperties?.let {
+        poEditor {
+            setApiToken(it.getProperty("poEditorApiToken"))
+            setProjectId(it.getProperty("poEditorProjectId").toInt())
             setDefaultLang("en")
         }
     }
