@@ -20,9 +20,15 @@ gradlePlugin {
             id = "daily-android-module"
             implementationClass = "cz.talich.daily.plugin.DailyAndroidModule"
         }
+
         register("daily-android-detekt-plugin") {
             id = "daily-android-detekt-plugin"
             implementationClass = "cz.talich.daily.plugin.DailyAndroidDetektPlugin"
+        }
+
+        register("daily-dependency-graph-plugin") {
+            id = "daily-dependency-graph-plugin"
+            implementationClass = "cz.talich.daily.plugin.DailyDependencyGraphPlugin"
         }
     }
 }

@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("daily-android-detekt-plugin")
-    id("com.vanniktech.dependency.graph.generator")
+    id("daily-dependency-graph-plugin")
 }
 
 android {
@@ -63,16 +63,4 @@ dependencies {
     add(MaterialDesign.dependencies)
 
     implementation(Accompanist.systemUiController)
-}
-
-tasks {
-    register("generateAndCopyDependencyGraphs", Copy::class) {
-        dependsOn("generateProjectDependencyGraph", "generateDependencyGraph")
-
-        from(
-            "build/reports/project-dependency-graph/project-dependency-graph.png",
-            "build/reports/dependency-graph/dependency-graph.png"
-        )
-        into("${rootProject.projectDir}/dependency graphs")
-    }
 }
