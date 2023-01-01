@@ -11,7 +11,7 @@ internal class BaseViewModelTest {
     @Test
     fun `should set the initial view state and provide it`() {
         val initialState = "initial state"
-        val viewModel = object : BaseViewModel<String>(initialState) {}
+        val viewModel = object : AbstractViewModel<String>(initialState) {}
         viewModel.state shouldBe initialState
     }
     @Test
@@ -26,7 +26,7 @@ internal class BaseViewModelTest {
         }
     }
 
-    class TestViewModel(initialState: String) : BaseViewModel<String>(initialState) {
+    class TestViewModel(initialState: String) : AbstractViewModel<String>(initialState) {
         fun newState() {
             state = "new state"
         }

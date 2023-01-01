@@ -7,6 +7,9 @@ object Testing {
     private const val turbine = "app.cash.turbine:turbine:0.12.1"
     private const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test"
 
+    const val archUnit = "com.tngtech.archunit:archunit:1.0.1"
+    const val archUnitJunit = "com.tngtech.archunit:archunit-junit4:1.0.1"
+
     val dependencies = listOf(
         Pair("testImplementation", jUnit),
         Pair("androidTestImplementation", jUnitExt),

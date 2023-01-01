@@ -57,10 +57,14 @@ android {
 
 dependencies {
     addModule(Feature.main)
+    addModule(Library.mvvm)
 
     add(Testing.dependencies)
     add(AndroidX.dependencies)
     add(MaterialDesign.dependencies)
 
     implementation(Accompanist.systemUiController)
+
+    testImplementation(Testing.archUnit)
+    testImplementation(Testing.archUnitJunit)
 }
