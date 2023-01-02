@@ -12,7 +12,7 @@ internal object PresentationLayerFixtures {
     const val viewModelNameSuffix = "ViewModel"
 
     val presentationLayerClasses: GivenClassesConjunction = classes().that()
-        .resideInAPackage(ArchUnitFixtures.presentationLayerPackage)
+        .resideInAPackage("..${ArchUnitFixtures.Layers.presentation}")
         .and()
         .areTopLevelClasses()
 }
