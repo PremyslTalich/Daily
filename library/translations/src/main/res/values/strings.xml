@@ -3,4 +3,5 @@
     <string name="message_line_1">"Everything"</string>
     <string name="message_line_2">"Will"</string>
     <string name="message_line_3">"Be\nAlright"</string>
+    <string name="app_name">"Daily"</string>
 </resources>
