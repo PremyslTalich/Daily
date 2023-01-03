@@ -74,7 +74,7 @@ private fun Project.configureAndroid() {
                     getByName("debug").java.srcDirs("src/main/java", "src/debug/java")
                 }
 
-                enableUnitTestCoverage  = false
+                enableUnitTestCoverage  = true
                 isMinifyEnabled = false
             }
 
@@ -84,7 +84,7 @@ private fun Project.configureAndroid() {
                 }
 
                 enableUnitTestCoverage  = false
-                isMinifyEnabled = false
+                isMinifyEnabled = true
 
                 proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
             }
