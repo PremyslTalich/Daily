@@ -7,7 +7,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
 @OptIn(ExperimentalCoroutinesApi::class)
-internal class BaseViewModelTest {
+internal class AbstractViewModelTest {
     @Test
     fun `should set the initial view state and provide it`() {
         val initialState = "initial state"
