@@ -1,3 +1,5 @@
+[![Android CI](https://github.com/PremyslTalich/Daily/actions/workflows/android.yml/badge.svg)](https://github.com/PremyslTalich/Daily/actions/workflows/android.yml)
+
 # Daily
 _Your daily dose of reassurance._ No user data is being collected.
 
