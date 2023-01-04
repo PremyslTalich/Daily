@@ -3,7 +3,7 @@ object Application {
     const val namespace = id
 
     object Version {
-        const val name = "1.0"
+        const val name = "1.1"
         val code: Int
             get() = name.replace(".", "").toInt()
     }
