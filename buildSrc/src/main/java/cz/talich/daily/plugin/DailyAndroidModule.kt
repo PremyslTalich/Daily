@@ -19,7 +19,6 @@ class DailyAndroidModule : Plugin<Project> {
 private fun Project.configurePlugins() {
     plugins.apply("com.android.library")
     plugins.apply("org.jetbrains.kotlin.android")
-    plugins.apply("com.android.library")
 }
 
 private fun Project.configureDependencies() {
